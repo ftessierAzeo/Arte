@@ -1,0 +1,11 @@
+
+resource "azurerm_data_factory" "df-datalakearte" {
+  name                = "df-datalakearte-${var.environnement}"
+  resource_group_name      = azurerm_resource_group.rg-datalake.name
+  location                 = "${var.location}"
+
+    tags = {
+    project = "datalake"
+    env = "${var.environnement}"
+  }
+}
