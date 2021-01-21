@@ -21,6 +21,7 @@ variable "location" {
 
 variable "environnement" {
   description = "The name for the environnement."
+  default     = "DEMO"
 }
 
 variable "virtual_network_name" {
