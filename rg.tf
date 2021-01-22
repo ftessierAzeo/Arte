@@ -1,8 +1,8 @@
 provider "azurerm" {
-	subscription_id = "${var.AzureSubscriptionId}"
+/* 	subscription_id = "${var.AzureSubscriptionId}"
 	client_id	= "${var.AzureClientId}"
 	client_secret	= "${var.AzureClientSecret}"
-	tenant_id	= "${var.AzureTenantId}"
+	tenant_id	= "${var.AzureTenantId}" */
   version = "=2.20.0"
     features {
     key_vault {
