@@ -56,10 +56,10 @@ jobs:
     runs-on: ubuntu-latest
 
     env:
-      ARM_CLIENT_ID: ${{ secrets.CLIENTID }}
-      ARM_CLIENT_SECRET: ${{ secrets.CLIENTSECRET }}
-      ARM_SUBSCRIPTION_ID: ${{ secrets.SUBSCRIPTIONID }}
-      ARM_TENANT_ID: ${{ secrets.TENANTID }}    
+        ARM_CLIENT_ID: ${{ secrets.az_client_id }}
+        ARM_CLIENT_SECRET: ${{ secrets.az_client_secret }}
+        ARM_SUBSCRIPTION_ID: ${{ secrets.az_subscription_id }}
+        ARM_TENANT_ID: ${{ secrets.az_tenant_id }}   
     # Use the Bash shell regardless whether the GitHub Actions runner is ubuntu-latest, macos-latest, or windows-latest
     defaults:
       run:
